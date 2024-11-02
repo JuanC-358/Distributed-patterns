@@ -56,14 +56,10 @@ El proyecto se compone de los siguientes elementos principales:
    Configura endpoints REST en el balanceador de carga para manejar las solicitudes del cliente y enrutar las respuestas a los servicios backend.
 
 ## Pruebas y Verificación
-### Pruebas de Resiliencia
-- **Simular fallos de nodos**: Desconecta manualmente un nodo y verifica que la estructura replicada sigue funcionando y aceptando nuevos registros.
-- **Agregar nuevos nodos**: Asegúrate de que los nuevos nodos reciben el estado actualizado.
+### Pasos para la Configuración y Compilación Local
+1. **Clonar el repositorio**:
+    ```bash
+   mvn exec:java -D exec.mainClass="org.jgroups.demos.draw"
+    ```
 
-### Pruebas de Carga y Rendimiento
-- Utiliza herramientas como **Apache JMeter** para simular múltiples solicitudes de clientes y verificar el funcionamiento del balanceador de carga.
-
-
-## Contribuciones
-Si deseas contribuir, por favor abre un **pull request** o reporta problemas en la sección de **issues**.
 
